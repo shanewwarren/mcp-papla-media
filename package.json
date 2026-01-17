@@ -4,6 +4,9 @@
   "description": "MCP server for Papla Media text-to-speech API",
   "main": "src/index.ts",
   "type": "module",
+  "bin": {
+    "papla-media": "./bin/papla-media"
+  },
   "scripts": {
     "start": "bun run src/index.ts",
     "typecheck": "tsc --noEmit"
