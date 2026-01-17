@@ -16,7 +16,7 @@ export function loadConfig(): ServerConfig {
   }
 
   const outputDir = process.env.PAPLA_OUTPUT_DIR || join(homedir(), "papla-audio");
-  const apiBaseUrl = process.env.PAPLA_API_BASE_URL || "https://papla.media";
+  const apiBaseUrl = process.env.PAPLA_API_BASE_URL || "https://api.papla.media";
 
   return { apiKey, outputDir, apiBaseUrl };
 }

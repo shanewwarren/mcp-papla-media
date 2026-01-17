@@ -49,7 +49,7 @@ export class PaplaClient {
 
   // Text-to-Speech
   async textToSpeech(voiceId: string, text: string): Promise<ArrayBuffer> {
-    const response = await this.fetch(`/v1/text_to_speech/${voiceId}`, {
+    const response = await this.fetch(`/v1/text-to-speech/${voiceId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
