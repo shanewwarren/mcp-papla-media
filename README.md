@@ -30,10 +30,7 @@ bun install
 Then add to Claude Code:
 
 ```bash
-claude mcp add --transport stdio \
-  --env PAPLA_API_KEY=your-api-key-here \
-  papla-media \
-  -- /path/to/mcp-papla-media/bin/papla-media
+claude mcp add papla-media /path/to/mcp-papla-media/bin/papla-media --env PAPLA_API_KEY=your-api-key-here
 ```
 
 Or add directly to your `.mcp.json` configuration file:
